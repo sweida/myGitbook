@@ -1,0 +1,521 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTML5存储使用详解（本地存储、会话存储） · 我的第一本电子书哈哈</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        <meta name="identifier" content="978-3-16-148410-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HTML5存储使用详解（本地存储、会话存储）.html" />
+    
+    
+    <link rel="prev" href="javascript里的this.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-概要.html">
+            
+                <a href="01-概要.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    01-概要
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01-概要.html">
+            
+                <a href="01-概要.html#前言">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="01-概要.html">
+            
+                <a href="01-概要.html#开始">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-划分结构.html">
+            
+                <a href="02-划分结构.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    02-划分结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="javascript里的this.html">
+            
+                <a href="javascript里的this.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    javascript里的this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    HTML5存储使用详解（本地存储、会话存储）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html#web存储介绍">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    web存储介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html#本地存储与会话存储的异同">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    本地存储与会话存储的异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html#web存储容量限制">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    web存储容量限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="HTML5存储使用详解（本地存储、会话存储）.html">
+            
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html#web存储的使用样例">
+            
+                    
+                        <b>1.5.4.</b>
+                    
+                    web存储的使用样例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="02-划分结构4.md">
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    02-划分结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HTML5存储使用详解（本地存储、会话存储）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="web&#x5B58;&#x50A8;&#x4ECB;&#x7ECD;">web&#x5B58;&#x50A8;&#x4ECB;&#x7ECD;</h3>
+<p>HTML5&#x7684;Web&#x5B58;&#x50A8;&#x529F;&#x80FD;&#x662F;&#x8BA9;&#x7F51;&#x9875;&#x5728;&#x7528;&#x6237;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x4FDD;&#x5B58;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x3002;Web&#x5B58;&#x50A8;&#x53C8;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ol>
+<li>&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF0C;&#x5BF9;&#x5E94; localStorage &#x5BF9;&#x8C61;&#x3002;&#x7528;&#x4E8E;&#x957F;&#x671F;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x7AD9;&#x5185;&#x4EFB;&#x4F55;&#x9875;&#x9762;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#xFF0C;&#x5BF9;&#x5E94; sessionStorage &#x5BF9;&#x8C61;&#x3002;&#x7528;&#x4E8E;&#x4E34;&#x65F6;&#x4FDD;&#x5B58;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#xFF08;&#x6216;&#x6807;&#x7B7E;&#x9875;&#xFF09;&#x7684;&#x6570;&#x636E;&#x3002;&#x5728;&#x8BBF;&#x5BA2;&#x5173;&#x95ED;&#x7A97;&#x53E3;&#x6216;&#x8005;&#x6807;&#x7B7E;&#x9875;&#x4E4B;&#x524D;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x662F;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x800C;&#x5173;&#x95ED;&#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x5220;&#x9664;&#x3002;</li>
+</ol>
+<h3 id="&#x672C;&#x5730;&#x5B58;&#x50A8;&#x4E0E;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x7684;&#x5F02;&#x540C;">&#x672C;&#x5730;&#x5B58;&#x50A8;&#x4E0E;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x7684;&#x5F02;&#x540C;</h3>
+<ol>
+<li>&#x672C;&#x5730;&#x5B58;&#x50A8;&#x548C;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x7684;&#x64CD;&#x4F5C;&#x4EE3;&#x7801;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x533A;&#x522B;&#x4EC5;&#x5728;&#x4E8E;&#x6570;&#x636E;&#x7684;&#x5BFF;&#x547D;&#x3002;</li>
+<li>&#x672C;&#x5730;&#x5B58;&#x50A8;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8BBF;&#x5BA2;&#x5C06;&#x6765;&#x8FD8;&#x80FD;&#x770B;&#x5230;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x5219;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x90A3;&#x4E9B;&#x9700;&#x8981;&#x4ECE;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4F20;&#x9012;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<h3 id="web&#x5B58;&#x50A8;&#x5BB9;&#x91CF;&#x9650;&#x5236;">web&#x5B58;&#x50A8;&#x5BB9;&#x91CF;&#x9650;&#x5236;</h3>
+<p>&#x5927;&#x591A;&#x6570;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x628A;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x9650;&#x5236;&#x4E3A; 5MB &#x4EE5;&#x4E0B;&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x548C;&#x7F51;&#x7AD9;&#x6240;&#x5728;&#x7684;&#x57DF;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x3002;</p>
+<h3 id="web&#x5B58;&#x50A8;&#x7684;&#x4F7F;&#x7528;&#x6837;&#x4F8B;">web&#x5B58;&#x50A8;&#x7684;&#x4F7F;&#x7528;&#x6837;&#x4F8B;</h3>
+<p>&#x4E0B;&#x9762;&#x4EE5;&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF08;localStorage&#xFF09;&#x4E3A;&#x4F8B;&#xFF0C;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x6539;&#x6210; sessionStorage &#x5BF9;&#x8C61;&#x5373;&#x53EF;&#x3002;</p>
+<h5 id="1-&#x6587;&#x672C;&#x6570;&#x636E;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;">1. &#x6587;&#x672C;&#x6570;&#x636E;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;</h5>
+<pre><code class="lang-javascript">localStorage.setItem(<span class="hljs-string">&quot;user_name&quot;</span>,<span class="hljs-string">&quot;hangge.com&quot;</span>);
+<span class="hljs-keyword">var</span> userName = localStorage.getItem(<span class="hljs-string">&quot;user_name&quot;</span>);
+</code></pre>
+<h5 id="2-&#x6570;&#x503C;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;">2. &#x6570;&#x503C;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;</h5>
+<pre><code class="lang-javascript">localStorage.setItem(<span class="hljs-string">&quot;user_age&quot;</span>,<span class="hljs-number">100</span>);
+<span class="hljs-keyword">var</span> userAge = <span class="hljs-built_in">Number</span>(localStorage.getItem(<span class="hljs-string">&quot;user_age&quot;</span>));
+</code></pre>
+<h5 id="3-&#x65E5;&#x671F;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;">3. &#x65E5;&#x671F;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;</h5>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x521B;&#x5EFA;&#x65E5;&#x671F;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> today = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+<span class="hljs-comment">//&#x6309;&#x7167;YYY/MM/DD&#x7684;&#x6807;&#x51C6;&#x683C;&#x5F0F;&#x628A;&#x65E5;&#x671F;&#x8F6C;&#x6362;&#x6210;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x5B58;&#x4E3A;&#x6587;&#x672C;</span>
+<span class="hljs-keyword">var</span> todayString = today.getFullYear() + <span class="hljs-string">&quot;/&quot;</span> + today.getMonth() + <span class="hljs-string">&quot;/&quot;</span> + today.getDate();
+localStorage.setItem(<span class="hljs-string">&quot;session_started&quot;</span>, todayString);
+
+<span class="hljs-comment">//&#x53D6;&#x5F97;&#x65E5;&#x671F;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x57FA;&#x4E8E;&#x8BE5;&#x6587;&#x672C;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x65E5;&#x671F;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> newToday = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(localStorage.getItem(<span class="hljs-string">&quot;session_started&quot;</span>));
+alert(newToday.getFullYear());
+</code></pre>
+<h5 id="4-&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;">4. &#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;</h5>
+<p>&#x5BF9;&#x8C61;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;JSON&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+JSON.stringify()&#xFF1A;&#x628A;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#x8FDE;&#x540C;&#x5176;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;&#x6587;&#x672C;&#x5F62;&#x4F3C;&#x3002;
+JSON.parse()&#xFF1A;&#x628A;&#x6587;&#x672C;&#x8F6C;&#x6362;&#x56DE;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;User&#x5BF9;&#x8C61;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">User</span>(<span class="hljs-params">n, a, t</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = n;
+    <span class="hljs-keyword">this</span>.age = a;
+    <span class="hljs-keyword">this</span>.telephone = t;
+}
+
+<span class="hljs-comment">//&#x521B;&#x5EFA;User&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> user = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;hangge&quot;</span>, <span class="hljs-number">100</span>, <span class="hljs-string">&quot;123456&quot;</span>);
+<span class="hljs-comment">//&#x5C06;&#x5176;&#x4FDD;&#x5B58;&#x4E3A;&#x65B9;&#x4FBF;&#x7684;JSON&#x683C;&#x5F0F;</span>
+sessionStorage.setItem(<span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-built_in">JSON</span>.stringify(user));
+
+<span class="hljs-comment">//&#x8DF3;&#x8F6C;&#x9875;&#x9762;</span>
+<span class="hljs-comment">//window.location = &quot;hangge.html&quot;;</span>
+
+<span class="hljs-comment">//&#x5C06;JSON&#x6587;&#x672C;&#x8F6C;&#x56DE;&#x539F;&#x6765;&#x7684;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> user2 = <span class="hljs-built_in">JSON</span>.parse(sessionStorage.getItem(<span class="hljs-string">&quot;user&quot;</span>));
+alert(user2.name);
+</code></pre>
+<h5 id="5-&#x68C0;&#x6D4B;&#x67D0;&#x4E2A;&#x952E;&#x7684;&#x503C;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x7B49;&#x4E8E;null">5. &#x68C0;&#x6D4B;&#x67D0;&#x4E2A;&#x952E;&#x7684;&#x503C;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x7B49;&#x4E8E;null</h5>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span>(localStorage.getItem(<span class="hljs-string">&quot;user_name&quot;</span>) == <span class="hljs-literal">null</span>){
+    alert(<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x5B58;&#x5728;&#xFF01;&quot;</span>);
+}
+</code></pre>
+<h5 id="6-&#x5220;&#x9664;&#x6570;&#x636E;&#x9879;">6. &#x5220;&#x9664;&#x6570;&#x636E;&#x9879;</h5>
+<pre><code class="lang-javascript">localStorage.removeItem(<span class="hljs-string">&quot;user_name&quot;</span>);
+</code></pre>
+<h5 id="7-&#x6E05;&#x9664;&#x6240;&#x6709;&#x6570;&#x636E;">7. &#x6E05;&#x9664;&#x6240;&#x6709;&#x6570;&#x636E;</h5>
+<pre><code class="lang-javascript">localStorage.clear();
+</code></pre>
+<h5 id="8-&#x67E5;&#x627E;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9879;">8. &#x67E5;&#x627E;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9879;</h5>
+<p>&#x4E0D;&#x77E5;&#x9053;&#x952E;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; key() &#x65B9;&#x6CD5;&#x4ECE;&#x672C;&#x5730;&#x6216;&#x8005;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x4E2D;&#x53D6;&#x5F97;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9879;&#x3002;&#x4E0B;&#x9762;&#x6837;&#x4F8B;&#xFF0C;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x540E;&#x5C31;&#x4F1A;&#x5217;&#x51FA;&#x6240;&#x6709;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Find All Items<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findAllItems</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-comment">//&#x53D6;&#x5F97;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x9879;&#x7684;&lt;ul&gt;&#x5143;&#x7D20;</span>
+      <span class="hljs-keyword">var</span> itemList = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;itemList&quot;</span>);
+      <span class="hljs-comment">//&#x6E05;&#x9664;&#x5217;&#x8868;</span>
+      itemList.innerHTML = <span class="hljs-string">&quot;&quot;</span>;
+
+      <span class="hljs-comment">//&#x904D;&#x5386;&#x6240;&#x6709;&#x6570;&#x636E;&#x9879;</span>
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;localStorage.length; i++) {
+        <span class="hljs-comment">//&#x53D6;&#x5F97;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x6570;&#x636E;&#x9879;&#x7684;&#x952E;</span>
+        <span class="hljs-keyword">var</span> key = localStorage.key(i);
+        <span class="hljs-comment">//&#x53D6;&#x5F97;&#x4EE5;&#x8BE5;&#x952E;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x503C;</span>
+        <span class="hljs-keyword">var</span> item = localStorage.getItem(key);
+
+        <span class="hljs-comment">//&#x7528;&#x4EE5;&#x4E0A;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x9879;&#x6DFB;&#x52A0;&#x5230;&#x9875;&#x9762;&#x4E2D;</span>
+        <span class="hljs-keyword">var</span> newItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;li&quot;</span>);
+        newItem.innerHTML = key + <span class="hljs-string">&quot;: &quot;</span> + item;
+        itemList.appendChild(newItem);
+      }
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;findAllItems()&quot;</span>&gt;</span>&#x5BFC;&#x51FA;&#x6240;&#x6709;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x6570;&#x636E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;itemList&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="&#x54CD;&#x5E94;&#x5B58;&#x50A8;&#x53D8;&#x5316;">&#x54CD;&#x5E94;&#x5B58;&#x50A8;&#x53D8;&#x5316;</h3>
+<p>Web&#x5B58;&#x50A8;&#x4E5F;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x673A;&#x5236;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x6216;&#x4F1A;&#x8BDD;&#x5B58;&#x50A8;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x67E5;&#x770B;&#x540C;&#x4E00;&#x9875;&#x9762;&#x6216;&#x8005;&#x540C;&#x4E00;&#x7AD9;&#x70B9;&#x4E2D;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x7684;&#x7A97;&#x53E3;&#x5C31;&#x4F1A;&#x89E6;&#x53D1; window.onStorage &#x4E8B;&#x4EF6;&#x3002;
+&#x8FD9;&#x91CC;&#x8BF4;&#x7684;&#x5B58;&#x50A8;&#x53D8;&#x5316;&#xFF0C;&#x6307;&#x7684;&#x662F;&#x5411;&#x5B58;&#x50A8;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x6570;&#x636E;&#x9879;&#xFF0C;&#x4FEE;&#x6539;&#x65E2;&#x6709;&#x6570;&#x636E;&#x9879;&#xFF0C;&#x5220;&#x9664;&#x6570;&#x636E;&#x9879;&#x6216;&#x8005;&#x6E05;&#x9664;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;&#x800C;&#x5BF9;&#x5B58;&#x50A8;&#x4E0D;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x7528;&#x65E2;&#x6709;&#x952E;&#x540D;&#x4FDD;&#x5B58;&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x6E05;&#x9664;&#x539F;&#x672C;&#x5C31;&#x662F;&#x7A7A;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF09;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F15;&#x53D1;onStorage &#x4E8B;&#x4EF6;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="javascript里的this.html" class="navigation navigation-prev " aria-label="Previous page: javascript里的this">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HTML5存储使用详解（本地存储、会话存储）.html#web存储介绍" class="navigation navigation-next " aria-label="Next page: web存储介绍">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML5存储使用详解（本地存储、会话存储）","date":"2018-06-15T11:44:02.000Z","tags":["HTML5"],"categories":"前端","id":2323,"level":"1.5","depth":1,"next":{"title":"web存储介绍","level":"1.5.1","depth":2,"anchor":"#web存储介绍","path":"v1/HTML5存储使用详解（本地存储、会话存储）.md","ref":"v1/HTML5存储使用详解（本地存储、会话存储）.md#web存储介绍","articles":[]},"previous":{"title":"javascript里的this","level":"1.4","depth":1,"path":"v1/javascript里的this.md","ref":"v1/javascript里的this.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-3-16-148410-0","variables":{},"title":"我的第一本电子书哈哈","language":"zh","gitbook":"*","description":"用 GitBook 制作的第一本電子書！","direction":"ltr"},"file":{"path":"v1/HTML5存储使用详解（本地存储、会话存储）.md","mtime":"2018-06-20T12:31:27.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-20T13:11:07.536Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
